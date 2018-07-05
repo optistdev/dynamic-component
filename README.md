@@ -45,11 +45,15 @@ Go ahead and `npm start` to see what we already have rendering in the browser.
 
 ## Deliverables
   
+(The application will error on `npm start` until the `Comment` component is
+created and exported)
+  
 #### `Comment` Component
   - create a new file, `Comment.js` within `src/` and don't forget to:
     - `import React, { Component } from 'react'` at the top of our file
     - Use the `class X extends Component {}` syntax
-    - export the class so it can be used in other files (`src/App.js` is already trying to import it!)
+    - export the class so it can be used in other files
+    - import the class in `BlogPost`
   - it should expect a single prop (the text of a comment), which can be used in the component via: `this.props.commentText`. This prop is passed in `src/BlogPost.js`
   - it should have a single `<div>` in its `render()` method
   - the `<div>` should have a `className="comment"` attribute
